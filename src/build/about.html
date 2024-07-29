@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
-    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/build/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
             <li><a href="index.html#about" class="m-3 text-lg font-medium hover:text-gray-500">About</a></li>
             <li><a href="index.html" class="m-3 text-lg font-medium hover:text-gray-500">Home</a></li>
             <li><a href="index.html#portfolio" class="m-3 text-lg font-medium hover:text-gray-500">Portfolio</a></li>
-            <li><a href="contact.html" class="m-3 text-lg font-medium hover:text-gray-500">Contact me</a></li>
+            <li><a href="contact.html" target="_blank" class="m-3 text-lg font-medium hover:text-gray-500">Contact me</a></li>
             <li><a href="index.html#skill" class="m-3 text-lg font-medium hover:text-gray-500">Skills</a></li>
           </div>
           <li class="hidden lg:block">
@@ -50,8 +50,8 @@
         <li class="py-2"><a href="index.html#about" class="m-3 text-md font-medium hover:text-gray-500">About</a></li>
         <li class="py-2"><a href="index.html" class="m-3 text-md font-medium hover:text-gray-500">Home</a></li>
         <li class="py-2"><a href="index.html#portfolio" class="m-3 text-md font-medium hover:text-gray-500">Portfolio</a></li>
-        <li class="py-2"><a href="contact.html" class="m-3 text-md font-medium hover:text-gray-500">Contact me</a></li>
-        <li><a href="index.html#skill" class="m-3 text-lg font-medium hover:text-gray-500">Skills</a></li>
+        <li class="py-2"><a href="contact.html" target="_blank" class="m-3 text-md font-medium hover:text-gray-500">Contact me</a></li>
+        <li><a href="#skill" class="m-3 text-lg font-medium hover:text-gray-500">Skills</a></li>
         <li class="m-3">
           <a href="#" class="font-medium flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 inline hover:bg-gray-700">
@@ -63,31 +63,93 @@
       </ul>
     </div>
   </header>
-  <div class="flex justify-center">
-  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-    <h2 class="text-2xl font-bold mb-6 text-center">Contact me</h2>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSffN7FYKzSS4uQcgNqQZQqHuiXuKoCoafb_Pmu79LokH4eQ1A/formResponse" method="POST">
-        <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
-            <input type="text" id="name" name="entry.53059221" required class="w-full px-3 py-2 border rounded">
+  <main class="container mx-auto my-8 p-4 bg-white rounded-lg shadow-lg">
+    <section class="text-center">
+        <img src="/src/build/divyan.png" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 lg:w-56 lg:h-auto">
+        <h2 class="text-3xl font-bold mb-2">About Me</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Hi, I'm Divyan T, a pre-final year Information Technology student at EGS Pillay Engineering College in Nagapattinam. With a strong passion for technology and software development, 
+          I specialize in both Java Full Stack Development and Android Development.
+          
+          In frontend development, I have hands-on experience with HTML, CSS, JavaScript, and ReactJS, crafting engaging user interfaces. On the backend, I excel in building robust web applications using Spring Boot, Spring Data JPA, Spring MVC, and Thymeleaf. 
+          
+          I ensure secure application design with Spring Security, enhancing data protection and user authentication. My proficiency extends to MySQL for efficient database management, ensuring seamless data handling and storage.
+          
+          I am skilled in various programming languages, including Java, Python, and C, leveraging them to solve intricate problems and deliver effective solutions. In Android development, I utilize XML to create intuitive and user-friendly mobile applications.
+          
+          My expertise also encompasses RESTful APIs for seamless integration between different systems, facilitating efficient communication and data exchange. Furthermore, my proficiency in Java Swing enhances my ability to develop desktop applications with rich graphical user interfaces.
+          
+          I have a solid foundation in problem-solving, data structures, and algorithms, crucial for optimizing application performance and functionality. Committed to continuous learning, I stay updated with the latest technological advancements, eager to tackle challenging projects that foster both personal and professional growth.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mt-8">
+        <h3 class="text-2xl font-bold mb-4 text-center">Skills</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+            <div>
+                <img src="/src/build/java.png" alt="Java" class="w-12 h-12 mx-auto">
+                <p class="mt-2">Java</p>
+            </div>
+            <div>
+                <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-1024.png" alt="Python" class="w-12 h-12 mx-auto">
+                <p class="mt-2">Python</p>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.vyMp89svBdH47FavLVhQAwHaHa&pid=Api&P=0&h=180" alt="SpringBoot" class="w-12 h-12 mx-auto">
+                <p class="mt-2">SpringBoot</p>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.lmjGcaHzIzS1scTpTZepHwAAAA&pid=Api&P=0&h=180" alt="MVC" class="w-12 h-12 mx-auto">
+                <p class="mt-2">MVC</p>
+            </div>
+            <div>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.4Vb-7oi7VgjH7tskIWuziAAAAA&pid=Api&P=0&h=180" alt="JPA" class="w-12 h-12 mx-auto">
+                <p class="mt-2">JPA</p>
+            </div>
+            <div>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.JVt34lGxmm0GAGNNL_mwBgHaHa&pid=Api&P=0&h=180" alt="MySQL" class="w-12 h-12 mx-auto">
+                <p class="mt-2">MySQL</p>
+            </div>
+            <div>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.zsRffxj6jXzbZd0I04dNwAHaHa&pid=Api&P=0&h=180" alt="HTML" class="w-12 h-12 mx-auto">
+                <p class="mt-2">HTML</p>
+            </div>
+            <div>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.hG5pTxe85jmUCVFAV67FRQHaEb&pid=Api&P=0&h=180" alt="CSS" class="w-12 h-12 mx-auto">
+                <p class="mt-2">CSS(tailwind)</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.4LVKPoqv9bp7GRFNIWvunQHaHa&pid=Api&P=0&h=180" alt="JavaScript" class="w-12 h-12 mx-auto">
+                <p class="mt-2">JavaScript</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.boBVlxoxhHiuFvn7MipwIQHaHW&pid=Api&P=0&h=180" alt="ReactJS" class="w-12 h-12 mx-auto">
+                <p class="mt-2">ReactJS</p>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.Ogz2szfCpa_osQG6NCoLLgHaFW&pid=Api&P=0&h=180" alt="DSA" class="w-12 h-12 mx-auto">
+                <p class="mt-2">Data Structures & Algorithms</p>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.zfG8FW1Z61TDDwJjGR2T-AHaIU&pid=Api&P=0&h=180" alt="Android" class="w-12 h-12 mx-auto">
+                <p class="mt-2">Android XML</p>
+            </div>
         </div>
-        <div class="mb-4">
-            <label for="phone" class="block text-gray-700 font-bold mb-2">Phone:</label>
-            <input type="tel" id="phone" name="entry.21016884" required class="w-full px-3 py-2 border rounded">
-        </div>
-        <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
-            <input type="email" id="email" name="entry.2132718193" required class="w-full px-3 py-2 border rounded">
-        </div>
-        <div class="mb-4">
-            <label for="message" class="block text-gray-700 font-bold mb-2" >Message:</label>
-            <textarea id="message" name="entry.171694380" required class="w-full px-3 py-2 border rounded" ></textarea>
-        </div>
-        <div class="text-center">
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Submit</button>
-        </div>
-    </form>
-</div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section class="text-center mt-8">
+        <a href="contact.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+            Hire Me
+        </a>
+    </section>
+    
+              
+</main>
+<div class="flex justify-center">
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="divyan-tm" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/divyan-tm?trk=profile-badge">DIVYAN T</a></div>
+<github-profile-widget username="divyantm"></github-profile-widget>
 </div>
   <footer class="bg-gray-800 text-white py-8 mt-10 -m-24">
     <div class="container mx-auto text-center">
@@ -135,4 +197,7 @@
   });
 });
     </script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script src="https://npmcdn.com/github-profile-widget@<version-you-want>/github-profile-widget.js"></script>
+
 </html>
