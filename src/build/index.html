@@ -10,27 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body class="font-montserrat mx-3 sm:mx-5 lg:mx-24 my-3 lg:my-10">
+<body class="font-montserrat mx-5  lg:mx-24 my-3 lg:my-10">
   <header>
-    <div class="container mx-auto px-4">
+    <div class="container">
       <nav>
-        <ul class="flex flex-col lg:flex-row text-center lg:justify-between">
-          <li class="flex items-center hover:my-1 hover:text-gray-500 transition ease-in-out duration-1000">
-            <a href="#" class="text-xl lg:text-3xl font-extrabold">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:w-10 w-5 inline">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-              </svg>
-              DivyanTM
-            </a>
-          </li>
-          <div class="hidden lg:flex lg:items-center">
-            <li class="m-3"><a href="#about" class="text-lg font-medium hover:text-gray-500">About</a></li>
-            <li class="m-3"><a href="#home" class="text-lg font-medium hover:text-gray-500">Home</a></li>
-            <li class="m-3"><a href="#portfolio" class="text-lg font-medium hover:text-gray-500">Portfolio</a></li>
-            <li class="m-3"><a href="contact.html" target="_blank" class="text-lg font-medium hover:text-gray-500">Contact me</a></li>
-            <li class="m-3"><a href="#skill" class="text-lg font-medium hover:text-gray-500">Skills</a></li>
+        <ul class="flex text-center justify-between">
+          <div class="flex hover:my-1 hover:text-gray-500 transition ease-in-out duration-1000">
+            <li>
+              <a href="#" class="text-1xl lg:text-3xl justify-start font-extrabold">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-10 size-5 inline">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+                DivyanTM
+              </a>
+            </li>
           </div>
-          <li class="lg:hidden flex items-center justify-center">
+          <div class="hidden lg:flex">
+            <li><a href="#about" class="m-3 text-lg font-medium hover:text-gray-500">About</a></li>
+            <li><a href="#home" class="m-3 text-lg font-medium hover:text-gray-500">Home</a></li>
+            <li><a href="#portfolio" class="m-3 text-lg font-medium hover:text-gray-500">Portfolio</a></li>
+            <li><a href="contact.html" target="_blank" class="m-3 text-lg font-medium hover:text-gray-500">Contact me</a></li>
+            <li><a href="#skill" class="m-3 text-lg font-medium hover:text-gray-500">Skills</a></li>
+          </div>
+          <li class="hidden lg:block">
             <a href="#" class="font-medium hover:text-gray-500">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 inline">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -306,7 +308,7 @@
             </div>
           </div>
           <!-- Flashcard App Card -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-duration="1000">
             <img src="fc.jpg" alt="Flashcard App" class="w-full h-56 object-contain">
             <div class="p-6">
               <div class="flex items-center justify-center mb-4">
