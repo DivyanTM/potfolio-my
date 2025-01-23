@@ -15,11 +15,26 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script src="https://kit.fontawesome.com/efd80b05e0.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    #resumetext{
+      -webkit-text-stroke: 1px white;
+      color: black;
+    }
+  </style>
 </head>
 
-<body class="font-montserrat mx-5  lg:mx-24 my-3 lg:my-10">
+<body class="font-montserrat mx-5  lg:mx-24 my-3 lg:my-10 ">
   <header>
-    <div class="container">
+    <div class="container h-12 md:h-20">
       <nav>
         <ul class="flex text-center justify-between">
           <div class="flex hover:my-1 hover:text-gray-500 transition ease-in-out duration-1000">
@@ -36,7 +51,7 @@
           </div>
           <div class="hidden md:flex">
             <li><a href="index.html#about" class="m-3 text-lg font-medium hover:text-gray-500">About</a></li>
-            <li><a href="index.html" class="m-3 text-lg font-medium hover:text-gray-500">Home</a></li>
+            <li><a href="index.html#home" class="m-3 text-lg font-medium hover:text-gray-500">Home</a></li>
             <li><a href="index.html#portfolio" class="m-3 text-lg font-medium hover:text-gray-500">Portfolio</a></li>
             <li><a href="contact.html" target="_blank" class="m-3 text-lg font-medium hover:text-gray-500">Contact
                 me</a></li>
@@ -49,7 +64,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
               </svg>
-              divyantm2005@gmail.com
+              divyantm05@gmail.com
             </a>
           </li>
           <svg id="drawerToggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -61,50 +76,50 @@
         </ul>
       </nav>
     </div>
-    <div id="drawer" class="fixed top-0 left-0 w-full h-fit bg-white shadow-lg rounded shadow-gray-400 hidden z-50">
+    <div id="drawer" class="fixed top-0 left-0 w-full h-fit bg-gradient-to-br from-slate-700 to-slate-900 shadow-lg rounded shadow-gray-400 hidden z-50">
       <ul class="list-none p-4">
-        <li class="py-2"><a href="index.html#about" class="m-3 text-md font-medium hover:text-gray-500">About</a></li>
-        <li class="py-2"><a href="index.html" class="m-3 text-md font-medium hover:text-gray-500">Home</a></li>
-        <li class="py-2"><a href="index.html#portfolio"
-            class="m-3 text-md font-medium hover:text-gray-500">Portfolio</a></li>
-        <li class="py-2"><a href="contact.html" target="_blank"
-            class="m-3 text-md font-medium hover:text-gray-500">Contact me</a></li>
-        <li><a href="#skill" class="m-3 text-lg font-medium hover:text-gray-500">Skills</a></li>
+        <li class="py-2"><a href="index.html#about" class="m-3 text-lg   text-white font-medium hover:text-gray-500">About</a></li>
+        <li class="py-2"><a href="index.html#home" class="m-3 text-lg   text-white font-medium hover:text-gray-500">Home</a></li>
+        <li class="py-2"><a href="index.html#portfolio" class="m-3  text-white text-lg  font-medium hover:text-gray-500">Portfolio</a></li>
+        <li class="py-2"><a href="contact.html" target="_blank" class="m-3 text-lg   text-white font-medium hover:text-gray-500">Contact me</a></li>
+        <li><a href="#skill" class="m-3 text-lg font-medium text-white  hover:text-gray-500">Skills</a></li>
         <li class="m-3">
-          <a href="#" class="font-medium flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-8 inline hover:bg-gray-700">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+          <a href="#" class="font-medium flex items-center space-x-2 text-white ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 inline hover:bg-gray-700">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
-            <span>divyantm2005@gmail.com</span>
+            <span>divyantm05@gmail.com</span>
           </a>
         </li>
       </ul>
     </div>
   </header>
 
-
-  <section id="home ">
-    <div class="flex-row-reverse p-5 md:flex">
-      <div class="container flex justify-center align-items-center">
-        <img src="divyan.png" alt="divyan image" class="h-75" data-aos="fade-right" data-aos-duration="1200">
+  <section id="home" class="w-screen mx-[-24px] lg:mx-[-96px] px-0 p-0 h-svh md:h-fit" >
+    <div class="flex-row-reverse md:p-20 p-5 md:flex">
+      <div class="w-full flex justify-center items-center">
+        <img src="divyan.png" alt="divyan image" class="h-fit" data-aos="fade-right" data-aos-duration="1200">
       </div>
-      <div class="container" data-aos="fade-right" data-aos-duration="1200">
-        <p class="text-center lg:text-left text-sm lg:text-2xl md:text-2xl  text-gray-700 font-semibold mt-10 lg:mt-36">
-          Hey, I'm Divyan TM</p>
-        <p
-          class="text-center lg:text-left text-2xl lg:text-6xl md:text-4xl leading-relaxed text-black font-semibold mt-5 lg:mt-8 ">
+      <div class="w-full" data-aos="fade-right" data-aos-duration="1200">
+        <p class="text-center lg:text-left text-sm lg:text-2xl md:text-2xl text-gray-700 font-semibold mt-10 lg:mt-36">
+          Hey, I'm Divyan TM
+        </p>
+        <p class="text-center lg:text-left text-2xl lg:text-6xl md:text-4xl leading-relaxed text-black font-semibold mt-5 lg:mt-8">
           Fullstack developer <span>and</span> <br>android developer
         </p>
-        <div class="flex justify-center  lg:justify-start">
+        <div class="flex justify-center lg:justify-start">
           <button
-            class="lg:text-2xl text-white bg-gray-900 border border-black w-28 h-10 lg:w-60 lg:h-20 rounded-full mt-8 lg:mt-20 hover:text-gray-900 hover:bg-white  transition-all ease-in-out duration-1000"
-            data-aos="zoom-in-up" data-aos-duration="1000"><a href="contact.html">Get in touch</a></button>
+            class="lg:text-2xl text-white bg-gray-900 border border-black w-28 h-10 lg:w-60 lg:h-20 rounded-full mt-8 lg:mt-20 hover:text-gray-900 hover:bg-white transition-all ease-in-out duration-1000"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <a href="contact.html">Get in touch</a>
+          </button>
         </div>
       </div>
     </div>
   </section>
+
+
+  
   <section id="services">
     <div class="container mt-10 lg:mt-40" data-aos="fade-in" data-aos-duration="1000">
       <h1 class="text-2xl lg:text-4xl font-semibold text-center">My Services</h1>
@@ -144,7 +159,7 @@
             data-aos-duration="1000">
             <img src="java.png" alt="java" width="80px">
             <div>
-              <h1 class=" text-samll lg:text-2xl font-extrabold mb-4 mt-2 text-black">Java Development</h1>
+              <h1 class="text-samll lg:text-2xl font-extrabold mb-4 mt-2 text-black">Java Development</h1>
               <p class="text-sm lg:text-lg">
                 Offering expert Java development services, I create robust and scalable applications. Utilizing
                 technologies like SpringBoot and JPA, I ensure efficient back-end functionality and seamless
@@ -175,6 +190,9 @@
         data-aos="zoom-in-up" data-aos-duration="1000"><a href="contact.html">Get in touch</a></button>
     </div>
   </section>
+
+
+<!--   
   <section id="about">
     <div class="container mt-32 lg:flex">
       <div>
@@ -204,7 +222,43 @@
           id="pdfDownloadLink">Resume</a></button>
     </div>
 
+  </section> -->
+
+  <section id="about" class="md:h-lvh h-svh my-10">
+    <div class="mx-auto w-fit md:flex">
+      <div class="md:mx-0 mx-auto bg-gradient-to-br from-gray-300 to-gray-50 w-fit h-fit">
+      <img src="divyan_white.png" alt="divyan image" class="md:w-96 md:h-96 rounded-lg w-60 h-60">
+      <div class="flex justify-center space-x-6 py-2 bg-white">
+        <a href="https://github.com/yourusername" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" class="transition-transform transform hover:scale-110 md:h-auto md:w-auto h-10 w-10" />
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" class="transition-transform transform hover:scale-110 md:h-auto md:w-auto h-10 w-10" />
+        </a>
+        <a href="https://www.linkedin.com/in/divyan-tm" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="transition-transform transform hover:scale-110 md:h-auto md:w-auto h-10 w-10" />
+        </a>
+    </div>
+  
+      </div> 
+        <div class="md:max-w-lg p-5 md:translate-y-1/2 ">
+          <h1 class="md:text-4xl  text-lg font-semibold text-slate-700 py-5">Hi there,</h1>
+          <h1 class="md:text-4xl text-lg font-semibold text-slate-700 text-justify">My name is  DIVYAN and i <span class="md:text-4xl font-semibold text-violet-400
+            1 text-lg"> Code </span>(most of the time).</h1>
+          <p class="md:text-lg font-medium text-gray-600 text-justify tracking-tighter leading-relaxed md:translate-y-1/2 text-sm">
+            I am T DIVYAN a pre-final year Information Technology student at EGS Pillay Engineering 
+            College in Nagapattinam. With a strong passion for technology and software development
+            I specialize in both Java Full Stack Development and Android Development.
+          </p>
+          <div class="flex md:translate-y-28">
+            <a href="about.html" class="text-white bg-slate-900 font-medium lg:text-md py-3 px-4 rounded-full md:my-auto my-5">More about me<i class="fa-solid fa-arrow-up-right-from-square px-1"></i></a>
+          </div>
+        </div>
+        
+    </div>
   </section>
+
+<!--   
   <section id="education" class="overflow-hidden">
     <div class="container mt-10 lg:mt-40">
       <div class="flex items-center justify-center min-h-screen mt-20">
@@ -260,7 +314,50 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <section id="education">
+    <div class="flex-cols md:flex relative">
+      <div class="md:w-1/2 text-center md:text-start my-10 relative after:content-[' '] after:w-1/6 after:rounded-full after:-translate-x-1/2 after:h-1 md:after:h-2 after:bg-indigo-300 after:absolute after:-top-2 after:left-1/2 md:after:left-12">
+        <h1 class="text-slate-900 font-bold text-xl md:text-4xl">Education</h1>
+        <p class="text-gray-400 text-xxs font-semibold md:text-md">ACADEMIC CAREER</p>
+      </div>
+      <div class="relative after:absolute after:content-[' '] after:w-0.1 after:h-full after:top-0 after:left-2 after:bg-gray-400">
+        <div class="ms-14 my-10 after:absolute after:content-[' '] after:w-6 after:h-6 after:top-2 after:translate-y-20 md:after:translate-y-34 after:left-2 after:bg-indigo-300 after:z-10 after:-translate-x-1/2  after:rounded-full">
+          <span class="absolute  w-4 h-4 top-3 translate-y-20 md:translate-y-34 left-2 bg-indigo-500 z-20 -translate-x-1/2  rounded-full animate-pulse"></span>
+          <svg fill="#818cf8" class="w-20 md:w-32" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M225.26514,60.20508l-96-32a4.00487,4.00487,0,0,0-2.53028,0l-96,32c-.05713.019-.10815.04809-.16406.06958-.08545.033-.16821.06811-.251.10644a4.04126,4.04126,0,0,0-.415.22535c-.06714.04174-.13575.08007-.20044.12548a3.99,3.99,0,0,0-.47632.39307c-.02027.01953-.0437.0354-.06348.05542a3.97787,3.97787,0,0,0-.44556.53979c-.04077.0586-.07373.12183-.11132.18262a3.99741,3.99741,0,0,0-.23487.43262c-.03613.07837-.06811.15771-.09912.23852a3.96217,3.96217,0,0,0-.144.46412c-.01929.07714-.04126.15234-.05591.2312A3.98077,3.98077,0,0,0,28,64v80a4,4,0,0,0,8,0V69.55005l43.87524,14.625A59.981,59.981,0,0,0,104.272,175.09814a91.80574,91.80574,0,0,0-53.39062,38.71631,3.99985,3.99985,0,1,0,6.70117,4.36914,84.02266,84.02266,0,0,1,140.83447,0,3.99985,3.99985,0,1,0,6.70117-4.36914A91.80619,91.80619,0,0,0,151.728,175.09814a59.981,59.981,0,0,0,24.39673-90.92309l49.14038-16.38013a4.00037,4.00037,0,0,0,0-7.58984ZM180,120A52,52,0,1,1,87.92993,86.85986l38.80493,12.93506a4.00487,4.00487,0,0,0,2.53028,0l38.80493-12.93506A51.85133,51.85133,0,0,1,180,120ZM168.00659,78.44775l-.01294.0044L128,91.7832,44.64893,64,128,36.2168,211.35107,64Z"></path> </g></svg>
+          
+              <h1 class="text-transparent font-bold text-sm md:text-3xl bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text  py-1">B.TECH. Information Technology</h1>
+              <p class="text-slate-700 text-xs font-semibold md:text-2xl py-1">EGS Pillay Engineering College,</p>
+              <p class="text-slate-700 text-xs md:text-xl font-semibold">Nagapattinam</p>
+              <p class="font-medium text-xs text-slate-700 md:text-xl py-1">2026</p>
+              <p class="font-medium text-xs text-slate-700 md:text-xl py-1">9.2 CGPA</p>
+             
+        </div>
+        <div class="ms-14 my-10 after:absolute after:content-[' '] after:w-6 after:h-6 after:top-1/2 after:left-2 after:bg-indigo-300 after:z-10 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full">
+          <span class="absolute  w-4 h-4 top-1/2 left-2 bg-indigo-500 z-20 -translate-x-1/2 -translate-y-1/2 rounded-full animate-pulse"></span>
+          <svg fill="#818cf8" class="w-20 md:w-28" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="goals_2_" d="M31,31.36H1c-0.199,0-0.36-0.161-0.36-0.36v-3c0-0.199,0.161-0.36,0.36-0.36h1.64V25 c0-0.199,0.161-0.36,0.36-0.36h0.64V13.36H1c-0.153,0-0.289-0.096-0.34-0.241c-0.05-0.144-0.004-0.305,0.115-0.4l15-12 c0.132-0.104,0.318-0.104,0.45,0l15,12c0.12,0.096,0.166,0.256,0.115,0.4c-0.051,0.145-0.187,0.241-0.34,0.241h-2.64v11.28H29 c0.199,0,0.36,0.161,0.36,0.36v2.64H31c0.199,0,0.36,0.161,0.36,0.36v3C31.36,31.199,31.199,31.36,31,31.36z M1.36,30.64h29.28 v-2.28H1.36V30.64z M3.36,27.64h25.28v-2.28H3.36V27.64z M22.36,24.64h5.279V13.36H22.36V24.64z M10.36,24.64h11.28V13.36H10.36 V24.64z M4.36,24.64h5.28V13.36H4.36V24.64z M28,12.64h1.974L16,1.461L2.026,12.64H28z M25.36,23h-0.72v-8h0.721L25.36,23L25.36,23z M7.36,23H6.64v-8h0.72C7.36,15,7.36,23,7.36,23z M16,10.86c-1.577,0-2.86-1.283-2.86-2.86S14.423,5.14,16,5.14S18.86,6.423,18.86,8 S17.577,10.86,16,10.86z M16,5.86c-1.18,0-2.14,0.96-2.14,2.14s0.96,2.14,2.14,2.14S18.14,9.18,18.14,8S17.18,5.86,16,5.86z"></path> <rect id="_Transparent_Rectangle" style="fill:none;"></rect> </g></svg>
+          <h1 class="text-transparent font-bold text-sm md:text-3xl bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text  py-1">HSE BIO-MATHS</h1>
+              <p class="text-slate-700 text-xs font-semibold md:text-2xl py-1">sabhanayaka Mudhaliyar Hindu Aided Higher Secondary School,</p>
+              <p class="text-slate-700 text-xs md:text-xl font-semibold">Sirkali</p>
+              <p class="font-medium text-xs text-slate-700 md:text-xl py-1">2020</p>
+              <p class="font-medium text-xs text-slate-700 md:text-xl py-1">86%</p>
+        </div>
+        <div class="ms-14 my-10 after:absolute after:content-[' '] after:w-6 after:h-6 after:bottom-1/4  after:left-2 after:bg-indigo-300 after:z-10 after:-translate-x-1/2 after:translate-y-20 after:rounded-full">
+          <span class="absolute w-4 h-4 bottom-1/4  left-2 bg-indigo-400 z-20 -translate-x-1/2 translate-y-20 mb-1 rounded-full animate-pulse"></span>
+          <svg fill="#818cf8" class="w-20 md:w-32" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M249.88281,92.4707l-120-64a3.99913,3.99913,0,0,0-3.76562,0l-120,64a4.00022,4.00022,0,0,0,0,7.0586L32,113.3335v52.1206a12.03771,12.03771,0,0,0,2.3916,7.18994C42.03516,182.81494,71.37305,216,128,216c23.07129,0,41.61035-5.50977,56-12.72607V240a4,4,0,0,0,8,0V198.842a106.886,106.886,0,0,0,29.60742-26.197A12.0372,12.0372,0,0,0,224,165.4541V113.3335l25.88281-13.8042a4.00022,4.00022,0,0,0,0-7.0586ZM128,208c-52.91992,0-80.13281-30.74023-87.21289-40.1626A3.93282,3.93282,0,0,1,40,165.4541v-47.854l86.11719,45.9292a4.001,4.001,0,0,0,3.76562,0L184,134.66675v59.574C170.12451,201.86523,151.63281,208,128,208Zm88-42.5459a3.93235,3.93235,0,0,1-.78809,2.38428A97.06518,97.06518,0,0,1,192,189.37671V130.40015l24-12.8Zm-28-41.98755L129.88281,92.4707a4.00012,4.00012,0,0,0-3.76562,7.0586L179.5,128,128,155.4668,16.5,96,128,36.5332,239.5,96Z"></path> </g></svg>
+          <h1 class="text-transparent font-bold text-sm md:text-3xl bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text  py-1">SECONDARY EDUCATION</h1>
+              <p class="text-slate-700 text-xs font-semibold md:text-2xl py-1">Government Higher Secondary School,</p>
+              <p class="text-slate-700 text-xs md:text-xl font-semibold">Thirumullaivasal</p>
+              <p class="font-medium text-xs text-slate-700 md:text-xl py-1">2019</p>
+              <p class="font-medium text-xs text-slate-700 md:text-xl py-1">92%</p>
+        </div>
+      </div>
+      
+    </div>
+    
   </section>
+<!-- 
   <section id="skill" class="overflow-hidden">
     <div class="mx-auto bg-white shadow-md rounded-lg p-6 mt-10">
       <h1 class="text-2xl font-bold mb-4 text-center">My Skills</h1>
@@ -319,7 +416,145 @@
       </div>
     </div>
     </div>
+  </section> -->
+
+  <section id="skills">
+    <div class="md:-mx-24 bg-gradient-to-tr flex justify-center items-center from-blue-950 to-sky-950 -mx-5 via-slate-950 py-10 lg:h-lvh h-svh my-10">
+      <div class="rounded-3xl backdrop-blur-lg bg-white/5 h-fit shadow-sm md:p-10 p-5">
+        <h1 class="md:text-3xl text-center font-medium text-white text-lg">What Powers My Craft ?</h1>
+        <div class="grid md:grid-flow-cols md:grid-cols-6 grid-flow-row grid-cols-2 place-items-center md:gap-2 gap-3 md:w-fit mx-auto md:my-10 my-2">
+          <div class="text-white flex items-center mx-auto  backdrop-blur-2xl justify-between space-x-2 pe-6 bg-white/5 ps-5 w-fit border border-gray-600 rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=5OD485koNIrb&format=png&color=000000" alt="java" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Java</p>
+          </div>
+          <div class="text-white flex items-center mx-auto backdrop-blur-2xl justify-between space-x-2 pe-6 w-fit bg-white/5 ps-5 border border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Python</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 pe-6 ps-5 w-fit bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=ZoxjA0jZDdFZ&format=png&color=000000" alt="kotlin" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Kotlin</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-8 md:ps-5 ps-8 bg-white/5 border-gray-600  rounded-lg shadow-sm text-xs md:text-lg" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="c" class="md:w-12 md:h-12 w-8 h-8">
+            <p>C</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit pe-6 ps-5 md:col-span-1 col-span-full bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="html" class="md:w-12 md:h-12 w-8 h-8">
+            <p>HTML</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto  justify-between space-x-2 w-fit pe-6 ps-5 bg-white/5 md:col-span-1 col-span-full border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000" alt="css" class="md:w-12 md:h-12 w-8 h-8">
+            <p>CSS</p>
+          </div>
+          
+        </div>
+        <div class="grid md:grid-flow-col md:grid-cols-5 grid-flow-row grid-cols-2 md:place-items-center md:gap-5 w-fit mx-auto md:my-10 my-2 gap-2">
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-3 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" alt="springboot" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Spring</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-3 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000" alt="react js" class="md:w-12 md:h-12 w-8 h-8">
+            <p>React js</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit pe-6 ps-5 bg-white/5 border-gray-600 md:col-span-1 col-span-full rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=x7XMNGh2vdqA&format=png&color=000000" alt="Tailwind css" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Tailwind css</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between md:col-span-1  space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-3 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000" alt="javascript" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Javascript</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between md:col-span-1  space-x-2 w-fit pe-6 ps-5 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" alt="MYSQL" class="md:w-10 md:h-10 w-7 h-7">
+            <p>MYSQL</p>
+          </div>
+         
+        </div>
+        <div class="grid md:grid-flow-col md:grid-cols-6 grid-flow-row grid-cols-2 place-items-center md:gap-2 w-fit mx-auto md:my-10 my-2 gap-2">
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-3 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png" alt="Jetpack Compose" class="md:w-12 md:h-12 w-8 h-8">
+            <p>Compose</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-3 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://dominickm.com/wp-content/uploads/2016/06/spring-boot-logo_full.png" alt="springboot" class="md:w-12 md:h-12 w-8 h-8">
+            <p>springboot</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:cols-span-1 col-span-full pe-6 ps-5 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://spring.io/img/projects/spring-security.svg" alt="spring security" class="md:w-12 md:h-12 w-8 h-8 py-1">
+            <p>spring security</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-3 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://spring.io/img/projects/spring-data.svg" alt="spring JPA" class="md:w-12 md:h-12 w-8 h-8 py-1">
+            <p>spring Data</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit pe-6 ps-5 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=000000" alt="Android" class="md:w-12 w-8 h-8 md:h-12 py-1">
+            <p>Android</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between md:col-span-1 col-span-full space-x-2 w-fit pe-6 ps-5 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" alt="Spring mvc" class="md:w-12 w-8 h-8 md:h-12 py-1">
+            <p>Spring MVC</p>
+          </div>
+        </div>
+        <div class="grid md:grid-flow-col md:grid-cols-3 grid-flow-row grid-cols-2 place-items-center md:gap-5 w-fit mx-auto md:my-10 my-2 gap-3">
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:col-span-1 col-span-full pe-6 ps-5 bg-white/5 border-gray-600  rounded-lg shadow-sm text-xs md:text-lg" style="border-width: 0.1px;">
+            <img src="https://spring.io/img/projects/spring-cloud.svg" alt="Spring cloud" class="md:w-12 w-8 h-8 md:h-12  py-1">
+            <p>Spring Cloud</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit pe-6 ps-5 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://img.icons8.com/?size=100&id=f3ItxOKDBcso&format=png&color=000000" alt="XML" class="md:w-12 w-8 h-8 md:h-12  py-1">
+            <p>XML</p>
+          </div>
+          <div class="text-white flex items-center backdrop-blur-2xl mx-auto justify-between space-x-2 w-fit md:pe-6 pe-2 md:ps-5 ps-2 bg-white/5 border-gray-600  rounded-lg shadow-sm md:text-lg text-xs" style="border-width: 0.1px;">
+            <img src="https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png" alt="Material UI" class="md:w-12 w-8 h-8 md:h-12  py-1">
+            <p>Material UI</p>
+          </div>
+        </div>
+  
+        
+      </div>
+    </div>
   </section>
+  
+  <section id="portfolio">
+    <div class="md:hidden -mx-5  w-svw h-10 rounded-t-semi bg-black">
+      <h1 class="text-center">Hello World</h1>
+    </div>
+    <div class="bg-black md:-mx-24 md:h-lvh md:p-10 -mx-5 p-5">
+      <h1 class="text-gray-400 md:text-4xl text-sm font-Roboto relative md:font-thin after:absolute after:content-[' '] after:w-20 after:h-[0.1px] after:bg-gray-400 after:rounded-full after:-bottom-1 after:left-0">Recent Project</h1>
+      
+      <div class="md:flex  items-center">
+        <div class="md:w-1/2">
+          <h1 class="text-white md:text-8xl text-3xl font-bold py-5 text-center font-Roboto" id="resumetext">Resume Builder</h1>
+          <p class="text-white md:font-extralight font-light md:text-center text-justify leading-relaxed tracking-tighter md:text-xl text-sm">The Resume Builder is a sleek and intuitive web application that empowers users to create stunning and professional resumes with ease. Featuring customizable templates and an elegant interface, it allows individuals to input their personal details, work experience, and skills effortlessly. With real-time preview functionality and multiple download options, this user-friendly tool makes the resume creation process efficient and enjoyable.</p>
+          <div class="flex justify-center gap-3 py-5">
+            <p class="text-black font-semibold text-xxxs md:text-sm bg-white md:py-2 md:px-3 px-1 py-1 rounded-full w-fit">
+              <i class="devicon-spring-original"></i>
+            Spring Boot</p>
+            <p class="text-black font-semibold text-xxxs md:text-sm bg-white md:py-2 md:px-3 px-1 py-1 rounded-full w-fit">
+              <i class="devicon-html5-plain"></i>HTML
+            </p>
+            <p class="text-black font-semibold text-xxxs md:text-sm bg-white md:py-2 md:px-3 px-1 py-1 rounded-full w-fit">
+              <i class="devicon-tailwindcss-original"></i>
+            Tailwind CSS</p>
+            <p class="text-black font-semibold text-xxxs md:text-sm bg-white md:py-2 md:px-3 px-1 py-1 rounded-full w-fit">
+              
+              <i class="devicon-javascript-plain"></i>
+            Javascript</p>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:flex md:h-lvh justify-center items-center">
+          <div>
+            <img src="resumebuildermockup.png" alt="resumebuildermockup" id="rbimage" class="w-auto h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
   <section id="portfolio">
     <h1 class="text-2xl lg:text-5xl font-semibold text-center mt-10">Take a look at my portfolio</h1>
     <div class="container mx-auto px-4 py-10">
@@ -480,7 +715,13 @@
       </div>
       <p>&copy; 2024 DIVYANTM. All rights reserved.</p>
     </div>
-  </footer>
+</footer>
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -523,9 +764,38 @@
         }
       });
     });
+    window.addEventListener('load', () => {
+    const targetSection = document.querySelector('#home'); 
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 
   </script>
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+ <script>
+   document.addEventListener("DOMContentLoaded", () => {
+     if (window.VANTA) {
+       VANTA.WAVES({
+         el: "#home ",
+         mouseControls: true,
+         touchControls: true,
+         gyroControls: false,
+         minHeight: 200.00,
+         minWidth: 200.00,
+         scale: 1.00,
+         scaleMobile: 1.00,
+         color: 0x99999d,
+         shininess: 102.00,
+         waveSpeed: 1.05,
+         zoom: 1.23,
+       });
+     }
+   });
+ </script>
+ 
+  
 </body>
 
 </html>
